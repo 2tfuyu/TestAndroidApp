@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/plus"
+        app:layout_constraintStart_toStartOf="@+id/plus"
+        tools:ignore="Autofill,LabelFor,MissingConstraints"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="104dp"
+        android:text="Plus"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Mul"
+        app:layout_constraintEnd_toEndOf="@+id/minus"
+        app:layout_constraintStart_toStartOf="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/minus"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Div"
+        app:layout_constraintEnd_toEndOf="@+id/mul"
+        app:layout_constraintStart_toStartOf="@+id/mul"
+        app:layout_constraintTop_toBottomOf="@+id/mul"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Minus"
+        app:layout_constraintEnd_toEndOf="@+id/plus"
+        app:layout_constraintStart_toStartOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/plus"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>
